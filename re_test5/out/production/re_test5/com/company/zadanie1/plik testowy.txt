@@ -1,3 +1,8 @@
 To jest przykladowy source w ktorym osoba o numerze pesel 12345678901 przyszla na kurs do osoby o numerze pesel 09876543211
 kurs ten odbywal sie pod adresem Warszawa 02-495 ulica orląt lwowskich, chociaż pierwotnie chcieli to zrobić po 00-120 złota 44, ale skonczylo sie miejsce, na kursie robili operacje artymetyczne, pierwszym przykladem bylo rozwiazanie 2 + 2, ale potem przeslismy do liczb ujemnych i bylo -5.4 / -3.33
 i zrobilo sie jednak troche trudniej
+
+This is an example source in which a person with the PESEL number 87656781223 came to a course with a person with the PESEL number . This course took place at the address Warszawa Orląt Lwowskich street, although originally they wanted to do it at 00-125 Złota 44, but the place ended, at the course they did arithmetic operations, the first example was solving 7 * 2, but then we moved on to negative numbers and it was -3.4 / -1.33 and it got a little harder.
+
+62-400
+52-500

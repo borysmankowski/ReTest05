@@ -9,7 +9,7 @@ public class EquationsTextExtractor implements RegexTextExtractor{
     @Override
     public List<String> extract(String source) {
         List<String> equations = new ArrayList<>();
-        Matcher matcher = Pattern.compile("\\d+(\\.\\d+)?\\s*[+\\-*/]\\s*\\d+(\\.\\d+)?").matcher(source);
+        Matcher matcher = Pattern.compile("(?<![a-zA-Z])[+-]?(?:0|[1-9]\\d*)(?:\\.\\d+)?\\s+[*/+-]\\s+[+-]?(?:0|[1-9]\\d*)(?:\\.\\d+)?(?![a-zA-Z])").matcher(source);
         while (matcher.find()) {
             equations.add(matcher.group());
         }

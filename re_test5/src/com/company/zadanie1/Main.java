@@ -24,13 +24,13 @@ public class Main {
         EquationsTextExtractor equationsExtractor = new EquationsTextExtractor();
         List<String> equations = equationsExtractor.extract(source);
 
-        System.out.println("Zadanie Kod Pocztowy");
+        System.out.println("Postal Code Text Extractor");
         System.out.println(postalCodes);
         System.out.println();
-        System.out.println("Zadanie Pesel");
+        System.out.println("Pesel Code Text Extractor");
         System.out.println(pesels);
         System.out.println();
-        System.out.println("Zadanie rownania");
+        System.out.println("Equations Text Extractor");
         System.out.println(equations);
     }
 }
