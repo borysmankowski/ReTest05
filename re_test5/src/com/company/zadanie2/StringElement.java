@@ -1,17 +1,20 @@
 package com.company.zadanie2;
 
-public class StringElement {
+import java.time.LocalDateTime;
 
+public class StringElement {
     private Object value;
     private StringElement next;
+    private LocalDateTime dateTime;
 
-    public StringElement(Object value, StringElement next) {
+    public StringElement(Object value, StringElement next, LocalDateTime dateTime) {
         this.value = value;
         this.next = next;
+        this.dateTime = dateTime;
     }
 
     public StringElement(Object value) {
-        this(value, null);
+        this(value, null, null);
     }
 
     public Object getValue() {
@@ -34,9 +37,12 @@ public class StringElement {
         value = o;
     }
 
+    public LocalDateTime getDateTime() {
+        return dateTime;
+    }
+
     @Override
     public String toString() {
-        return "kod pocztowy " + value + " "
-                + next;
+        return "kod pocztowy " + next + " " + getDateTime();
     }
 }

@@ -1,5 +1,7 @@
 package com.company.zadanie2;
 
+import java.time.LocalDateTime;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -14,19 +16,27 @@ public class Main {
         st.add("Ala ma psa");
 
         for (int i = 0; i < st.getSize(); i++) {
-            System.out.println("Kod pocztowy:" + st.get(i));
+            System.out.println("Kod pocztowy :" + st.get(i));
         }
 
         st.delete(0);  //usuwa "02-495"
         st.delete("00-000"); // usuwa "00-000"
 
+        System.out.println();
         System.out.println("po usunieciu");
         for (int i = 0; i < st.getSize(); i++) {
-            System.out.println(st.get(i));
+            System.out.println("Kod pocztowy: " + st.get(i));
 
         }
-
-        // przeladowanie
+        getDateTimeMethod(st);
 
     }
+
+    private static void getDateTimeMethod(StringContainer st) {
+        LocalDateTime now = LocalDateTime.now();
+        LocalDateTime dateFrom = now.minusHours(2);
+        LocalDateTime dateTo = now.plusHours(2);
+        StringContainer stBetween = st.getDataBetween(dateFrom,dateTo);
+        System.out.println(stBetween);
     }
+}
