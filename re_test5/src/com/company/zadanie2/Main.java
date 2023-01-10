@@ -28,6 +28,8 @@ public class Main {
             System.out.println("Kod pocztowy: " + st.get(i));
 
         }
+        System.out.println("Zadanie getDateTime");
+        System.out.println();
         getDateTimeMethod(st);
 
     }
@@ -37,6 +39,10 @@ public class Main {
         LocalDateTime dateFrom = now.minusHours(2);
         LocalDateTime dateTo = now.plusHours(2);
         StringContainer stBetween = st.getDataBetween(dateFrom,dateTo);
-        System.out.println(stBetween);
+
+        for (int i = 0; i < stBetween.getSize(); i++) {
+            System.out.println("Kod pocztowy :" + st.get(i));
+        }
+
     }
 }
